@@ -1,0 +1,12 @@
+<h3>Here are all the Animals in this AnimalType:</h3>
+
+<ol>
+@foreach (var animal in @Model["animals"])
+{
+  <li><a href='/animaltypes/@Model["animaltypes"].GetAnimalTypeId()/animals/@animal.GetId()'>@animal.GetName()</a></li>
+}
+</ol>
+
+<p><a href='/animaltypes/@Model["animaltypes"].GetAnimalTypeId()/animals/new'>Add a new item</a></p>
+<p><a href='/animaltypes'>Return to animal type list</a></p>
+<p><a href='/'>Return to Main Page</a></p>

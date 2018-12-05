@@ -1,0 +1,10 @@
+<h1>Animal Details: </h1>
+
+<h2>@Model["animals"].GetName()</h2>
+<h2>@Model["animals"].GetSex()</h2>
+<h2>@Model["animals"].GetDateAdmitted()</h2>
+<h2>@Model["animals"].GetBreed()</h2>
+<h3>Animal Type: @Model["animaltypes"].GetAnimalType()</h3>
+
+<a href='/animaltypes/@Model["animaltypes"].GetAnimalTypeId()/animal/new'>Add another item</a>
+<a href='/animaltypes'>View all categories</a>

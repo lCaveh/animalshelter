@@ -1,0 +1,13 @@
+<h1>Animal Types</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No animal type have been added yet!</h3>
+}
+
+@foreach (var animaltype in Model)
+{
+  <h3><a href='/animaltypes/@animaltype.GetAnimalTypeId()'>@animaltype.GetAnimalType()</a></h3>
+}
+
+<p><a href='/'>Back home</a></p>
